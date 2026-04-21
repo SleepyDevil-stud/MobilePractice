@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_slideshow">
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="ru.mirea.kozlovrd.mireaproject.fragment_slideshow"
+        android:label="Слайдшоу"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="ru.mirea.kozlovrd.mireaproject.GalleryFragment"
+        android:label="Галерея"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_tools"
+        android:name="ru.mirea.kozlovrd.mireaproject.ToolsFragment"
+        android:label="Инструменты"
+        tools:layout="@layout/fragment_tools" />
+    <fragment
+        android:id="@+id/nav_browser"
+        android:name="ru.mirea.kozlovrd.mireaproject.BlankFragment"
+        android:label="fragment_blank"
+        tools:layout="@layout/fragment_blank" />
+    <fragment
+        android:id="@+id/data"
+        android:name="ru.mirea.kozlovrd.mireaproject.data"
+        android:label="fragment_data"
+        tools:layout="@layout/fragment_data" />
+    <fragment
+        android:id="@+id/webview"
+        android:name="ru.mirea.kozlovrd.mireaproject.Webview"
+        android:label="fragment_webview"
+        tools:layout="@layout/fragment_webview" />
+
+
+</navigation>

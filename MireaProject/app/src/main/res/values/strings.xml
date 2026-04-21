@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">MireaProject</string>
+
+
+    <string name="menu_slideshow">Слайдшоу</string>
+    <string name="menu_gallery">Галерея</string>
+    <string name="menu_tools">Инструменты</string>
+    <string name="browser">Браузер</string>
+
+    <string name="open">Открыть меню</string>
+    <string name="close">Закрыть меню</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
