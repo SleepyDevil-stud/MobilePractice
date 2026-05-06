@@ -5,10 +5,68 @@
     android:layout_height="match_parent"
     tools:context=".CompassFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Компас"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="32dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Определение направления на Север"
+                android:textSize="16sp"
+                android:layout_marginBottom="32dp" />
+
+            <ImageView
+                android:id="@+id/compassImage"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:src="@drawable/compass_rose"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/directionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ожидание..."
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:layout_marginTop="32dp" />
+
+            <TextView
+                android:id="@+id/azimuthText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Азимут: --°"
+                android:textSize="18sp"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:padding="12dp"
+                android:background="#E0E0E0"
+                android:text="Использование: прибор показывает направление на Северный магнитный полюс. В походе помогает ориентироваться на местности."
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </FrameLayout>

@@ -5,10 +5,80 @@
     android:layout_height="match_parent"
     tools:context=".MicrophoneFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Голосовые заметки"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:layout_marginTop="32dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Записывайте идеи и мысли"
+                android:textSize="16sp"
+                android:layout_marginBottom="32dp" />
+
+            <Button
+                android:id="@+id/recordButton"
+                android:layout_width="200dp"
+                android:layout_height="80dp"
+                android:text="🎤 Начать запись"
+                android:textSize="18sp"
+                android:layout_marginBottom="16dp" />
+
+            <Button
+                android:id="@+id/playLastButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="▶Воспроизвести последнюю"
+                android:enabled="false" />
+
+            <TextView
+                android:id="@+id/statusText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Готов к записи"
+                android:textSize="14sp"
+                android:padding="16dp"
+                android:gravity="center" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#CCCCCC"
+                android:layout_marginVertical="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Творческое применение:"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tipsText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Используйте микрофон для:\n• Голосового дневника\n• Заметок на ходу\n• Идей для творчества\n• Тренировки речи"
+                android:textSize="14sp"
+                android:padding="12dp"
+                android:background="#F0F0F0"
+                android:layout_marginTop="8dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </FrameLayout>

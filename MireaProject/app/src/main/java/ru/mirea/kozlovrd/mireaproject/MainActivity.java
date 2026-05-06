@@ -79,6 +79,16 @@ public class MainActivity extends AppCompatActivity {
                     selectedFragment = new Webview();
                     Toast.makeText(MainActivity.this, "Браузер", Toast.LENGTH_SHORT).show();
                 }
+                else if (id == R.id.nav_sensors) {
+                    selectedFragment = new CompassFragment();
+                    Toast.makeText(MainActivity.this, "Датчики - Компас", Toast.LENGTH_SHORT).show();
+                } else if (id == R.id.nav_camera) {
+                    selectedFragment = new CameraFragment();
+                    Toast.makeText(MainActivity.this, "Камера - Коллаж", Toast.LENGTH_SHORT).show();
+                } else if (id == R.id.nav_microphone) {
+                    selectedFragment = new MicrophoneFragment();
+                    Toast.makeText(MainActivity.this, "Микрофон", Toast.LENGTH_SHORT).show();
+                }
 
                 if (selectedFragment != null) {
                     getSupportFragmentManager().beginTransaction()
